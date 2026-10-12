@@ -1,0 +1,21 @@
+{
+  "name": "语文备课研习室",
+  "short_name": "语文备课",
+  "description": "统编小学语文教材深度解读与智能备课平台",
+  "lang": "zh-CN",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#F8F7F3",
+  "theme_color": "#287B75",
+  "categories": ["education", "productivity"],
+  "icons": [
+    {"src": "icons/app-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}
+  ],
+  "shortcuts": [
+    {"name": "逐课精讲", "url": "./index.html#lessons"},
+    {"name": "AI备课", "url": "./index.html#assistant"},
+    {"name": "提示词工坊", "url": "./index.html#prompts"}
+  ]
+}

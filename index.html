@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#287B75" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="语文备课" />
+  <title>语文备课研习室 · 二年级上册</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icons/app-icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="icons/app-icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark">文</div><div><strong>语文备课</strong><span>研习室</span></div></div>
+      <div class="edition"><span class="dot"></span><div><small>当前教材</small><b>统编版 · 二年级上册</b></div><span class="chevron">⌄</span></div>
+      <nav class="nav"><p>工作空间</p><a class="active" data-view="dashboard"><i>⌂</i>工作台</a><a data-view="overview"><i>▤</i>教材总览</a><a data-view="units"><i>◈</i>单元解读</a><a data-view="lessons"><i>▣</i>逐课精讲</a><a data-view="design"><i>◇</i>教学设计</a><a data-view="ppt"><i>▰</i>PPT设计助手</a><a data-view="cases"><i>▶</i>精品课例</a><p>资料与工具</p><a data-view="resources"><i>▧</i>教学资源库</a><a data-view="assistant"><i>✦</i>AI 备课助手 <em>Beta</em></a><a data-view="prompts"><i>⌁</i>提示词工坊 <em>New</em></a><a data-view="notebook"><i>▱</i>我的备课本</a><a data-view="research"><i>⌘</i>教研资料</a><a data-view="saved"><i>♡</i>收藏与下载</a></nav>
+      <div class="sidebar-bottom"><div class="tip"><span>✦</span><div><b>备课小提示</b><p>先看单元语文要素，再确定课时目标。</p></div></div><div class="profile"><div class="avatar">高</div><div><b>高老师</b><small>北京市 · 语文教研组</small></div><span>•••</span></div></div>
+    </aside>
+    <main class="main"><header class="topbar"><button class="mobile-menu" id="mobile-menu" aria-label="打开菜单">☰</button><div class="breadcrumb"><span>工作台</span><b>/</b><strong id="crumb">备课总览</strong></div><div class="top-actions"><label class="search"><span>⌕</span><input id="global-search" placeholder="搜索课文、单元或教学资源" /><kbd>⌘ K</kbd></label><button class="install-btn" id="install-app" hidden>安装应用</button><button class="icon-btn" id="theme-toggle" title="切换主题">☼</button><button class="icon-btn">♡</button><div class="top-user">高老师 <span>⌄</span></div></div></header>
+      <div id="view-root" class="content"></div>
+    </main>
+  </div>
+  <nav class="mobile-bottom-nav" aria-label="手机快捷导航"><button data-mobile-view="dashboard"><i>⌂</i><span>工作台</span></button><button data-mobile-view="lessons"><i>文</i><span>课文</span></button><button data-mobile-view="assistant"><i>✦</i><span>AI备课</span></button><button data-mobile-view="resources"><i>▧</i><span>资源</span></button><button data-mobile-view="prompts"><i>⌁</i><span>提示词</span></button></nav>
+  <div class="offline-banner" id="offline-banner" hidden>当前处于离线模式，已缓存内容仍可使用。</div>
+  <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+  <div class="toast" id="toast">已加入我的备课本</div>
+  <script src="lessons-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
