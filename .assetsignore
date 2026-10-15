@@ -1,0 +1,9 @@
+worker.js
+wrangler.jsonc
+AI-DEPLOY.md
+.dev.vars
+.git/
+.gitignore
+.wrangler/
+node_modules/
+*.zip
